@@ -13,7 +13,7 @@
     <body>
 
         <nav>
-<?php foreach ($nav as $page => $url): ?>
-            <?=anchor($url, $page);?>
-<?php endforeach ?>
+            <?php foreach ($nav as $page => $url): ?>
+                        <?=anchor($url, $page);?>
+            <?php endforeach ?>
         </nav>
