@@ -28,16 +28,9 @@ class Welcome extends MY_Controller {
 	 */
 
 	public function index(){
-		$data = array(
-			'name'  => 'MCAST',
-			'message'  => 'Just Run!!!!!'
-		);
+
 		//this command loads a view from the views folder
-		$this->build('welcome', $data);
+		$this->build('welcome');
 	}
 
-	public function welcome()
-	{
-		echo "this is the welcom page";
-	}
 }
