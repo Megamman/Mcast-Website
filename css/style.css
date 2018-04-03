@@ -1,8 +1,25 @@
-.nav-link {
-    display: none;
+body {
+    height: 100%;
 }
 
-.nav-link a {
-    padding-left: 2em;
-    padding-right: 2em;
+nav {
+    font-size: 14px;
+}
+
+footer {
+    color: #f6f6f6;
+    padding: 1.5em;
+    text-align: center;
+    display: inline !important;
+}
+
+footer svg {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nav-link {
+    display: flex;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
 }
