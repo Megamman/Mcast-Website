@@ -32,5 +32,18 @@ class Welcome extends MY_Controller {
 		//this command loads a view from the views folder
 		$this->build('welcome');
 	}
+	public function welcome(){
+
+		//this command loads a view from the views folder
+		$this->build('welcome');
+	}
+
+	public function portofolio(){
+
+		//this command loads a view from the views folder
+		$this->build('portofolio');
+	}
+
+
 
 }

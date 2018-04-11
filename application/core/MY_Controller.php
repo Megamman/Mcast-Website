@@ -31,7 +31,7 @@ class MY_Controller extends CI_Controller {
     //use an associative array for the navigation
     function nav_links(){
         return array(
-            'Home'                      => 'welcome/welcome',
+            'Home'                      => 'welcome',
             'Student Portofolio'        => 'welcome/portofolio',
             'Resources'                 => 'welcome/resources',
             'News'                      => 'welcome/news',

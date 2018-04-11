@@ -1,3 +1,3 @@
 <!-- PUT HTML ETC FOR HOME SCREEN-->
 
-<img src="/images/landscape.jpg" alt="" style="width: 100%;">
+<img src="<?=base_url('images/landscape.jpg')?>" alt="" style="width: 100%;">

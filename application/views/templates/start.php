@@ -8,16 +8,18 @@
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="<?=base_url('css/style.css')?>">
     </head>
     <body>
 
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4 ext-nav">
-                    <?php foreach ($nav as $page => $url): ?>
-                        <?=anchor($url, $page, array('class' => 'text-white'));?>
-                    <?php endforeach ?>
+                <div class="bg-dark p-4">
+                    <div class="ext-nav">
+                        <?php foreach ($nav as $page => $url): ?>
+                            <?=anchor($url, $page, array('class' => 'text-white'));?>
+                        <?php endforeach ?>
+                    </div>
                 </div>
             </div>
             <nav class="navbar navbar-dark bg-dark">
