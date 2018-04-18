@@ -28,8 +28,4 @@
                 </ul>
             </div>
         </div>
-<<<<<<< HEAD
     </nav>
-=======
-        hi
->>>>>>> bc12f583fe403bb30c3d1ea398a4cefae2d0910a
