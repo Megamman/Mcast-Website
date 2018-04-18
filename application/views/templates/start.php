@@ -12,19 +12,20 @@
     </head>
     <body>
 
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <div class="ext-nav">
-                        <?php foreach ($nav as $page => $url): ?>
-                            <?=anchor($url, $page, array('class' => 'text-white'));?>
-                        <?php endforeach ?>
-                    </div>
-                </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="<?=base_url('images/brand.png')?>" width="230" height="80" alt="">
+            </a>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <?php foreach($nav as $page => $url): ?>
+                        <li>
+                            <?=anchor($url, $page, array('class' => 'nav-link'));?>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
         </div>
+    </nav>
