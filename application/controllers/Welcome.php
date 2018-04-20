@@ -44,6 +44,24 @@ class Welcome extends MY_Controller {
 		$this->build('portofolio');
 	}
 
+	public function resources(){
+
+		//this command loads a view from the views folder
+		$this->build('resources');
+	}
+
+	public function news(){
+
+		//this command loads a view from the views folder
+		$this->build('news');
+	}
+
+	public function contact(){
+
+		//this command loads a view from the views folder
+		$this->build('contact');
+	}
+
 
 
 }
