@@ -1,5 +1,5 @@
-<div class="jumbotron jumbotron-fluid">
-
+<div class="jumbotron jumbotron-fluid no-padding-jumb">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.0544699696006!2d14.41931779459995!3d35.91905509301663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbacf6988e98c11a!2sInstitute+for+the+Creative+Arts!5e0!3m2!1sen!2smt!4v1525438901732" allowfullscreen></iframe>
 </div>
 
 
@@ -35,7 +35,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-              
+
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
