@@ -17,6 +17,55 @@
 
 .navbar-nav > li
     display: inline-block
+    position: relative
+
+.navbar-nav
+    .dropdown-menu
+        position: absolute
+
+.btn-secondary
+    color: #303030 !important
+    background-color: transparent
+    border: none
+
+    &:hover
+        color: #303030 !important
+        background-color: transparent
+        border: none
+
+    &:not(:disabled):not(.disabled)
+        .active, :active
+            color: #303030 !important
+            background-color: transparent
+            border: none
+
+.show > .btn-secondary.dropdown-toggle
+    color: #303030 !important
+    background-color: transparent
+    border: none
+    outline: none
+
+.btn
+    border: none !important
+    transition: none !important
+    vertical-align: baseline
+    border-radius: 0px
+
+    &:focus
+        outline: none !important
+        box-shadow: none
+    &:active
+        outline: none !important
+        box-shadow: none
+
+.navbar-nav > a
+    background-color: Transparent
+    background-repeat: no-repeat
+    border: none
+    cursor: pointer
+    overflow: hidden
+    outline: none
+
 
 
 .navbar-light
@@ -26,6 +75,8 @@
             margin-left: 1em
             margin-right: 1em
             font-size: 14px
+
+
 
 .jumbotron-fluid
     height: 450px

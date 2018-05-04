@@ -20,11 +20,35 @@
 
             <div>
                 <ul class="nav navbar-nav">
-                    <?php foreach($nav as $page => $url): ?>
-                        <li>
-                            <?=anchor($url, $page, array('class' => 'nav-link'));?>
-                        </li>
-                    <?php endforeach ?>
+                    <li>
+                        <a class="nav-link" href="<?=site_url('welcome')?>">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="<?=site_url('welcome/portofolio')?>">Portofolio</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Academic Resources</a>
+                            <a class="dropdown-item" href="https://outlook.office.com/owa/" target="_blank" > Email</a>
+                            <a class="dropdown-item" href="http://www.mcast.edu.mt/183" target="_blank" > HandBook</a>
+                            <a class="dropdown-item" href="http://mcast.edu.mt/searchOurCatalogue" target="_blank" >Library</a>
+                            <a class="dropdown-item" href="https://www.schoology.com/" target="_blank" >Schoology</a>
+                            <a class="dropdown-item" href="#">Forms</a>
+                            <a class="dropdown-item" href="#">Timetables</a>
+                            <a class="dropdown-item" href="http://attendance.mcast.edu.mt/MyAttendance" target="_blank">Attendance</a>
+                            <a class="dropdown-item" href="#">Cancelled Lectures</a>
+                            <a class="dropdown-item" href="#">Vacancies</a> <!-- TO CREATE PAGE -->
+
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="<?=site_url('welcome/news')?>">News</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="<?=site_url('welcome/contact')?>">Contact</a>
+                    </li>
+
                 </ul>
             </div>
         </div>

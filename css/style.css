@@ -61,6 +61,62 @@ body {
 
 .navbar-nav > li {
     display: inline-block;
+    position: relative;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.btn-secondary {
+    color: #303030 !important;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-secondary:hover {
+    color: #303030 !important;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled) .active, .btn-secondary:not(:disabled):not(.disabled) :active {
+    color: #303030 !important;
+    background-color: transparent;
+    border: none;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+    color: #303030 !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    border: none !important;
+    transition: none !important;
+    vertical-align: baseline;
+    border-radius: 0px;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.navbar-nav > a {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
