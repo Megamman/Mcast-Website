@@ -14,19 +14,6 @@
     background-color: #55565a;
 }
 
-.grid .grid-item {
-    width: 300px;
-    height: 200px;
-    background-color: #2E93D1;
-    border: 1px solid black;
-}
-
-.grid .grid-item--width2 {
-    width: 300px;
-    background-color: #F04E5E;
-    border: 1px solid black;
-}
-
 .footer {
     font-size: 10px !important;
 }
@@ -165,4 +152,14 @@ body {
     text-align: center;
     font-size: 12px;
     line-height: 1.42857;
+}
+
+.col-sm {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
 }

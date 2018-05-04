@@ -17,10 +17,14 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"</script>
-    <script src="<?=base_url('js/bootstrap.min.js')?>"</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="<?=base_url('js/bootstrap.min.js')?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="<?=base_url('js/masonry.pkgd.js')?>"></script>
+    <script src="<?=base_url('js/scipt.js')?>"></script>
+
+
 
 
     </body>
