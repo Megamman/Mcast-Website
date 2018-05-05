@@ -62,6 +62,25 @@ class Welcome extends MY_Controller {
 		$this->build('contact');
 	}
 
+	public function cancel(){
+
+		//this command loads a view from the views folder
+		$this->build('cancel');
+	}
+
+	public function vacancies(){
+
+		//this command loads a view from the views folder
+		$this->build('vacancies');
+	}
+
+	public function tools(){
+
+		//this command loads a view from the views folder
+		$this->build('tools');
+	}
+
+
 
 
 }

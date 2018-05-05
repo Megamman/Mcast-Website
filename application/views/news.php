@@ -1,3 +1,9 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">NEWS <br>TEMP TEXT</h1>
+    </div>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-4">

@@ -35,7 +35,12 @@ class MY_Controller extends CI_Controller {
             'Student Portofolio'        => 'welcome/portofolio',
             'Resources'                 => 'welcome/resources',
             'News'                      => 'welcome/news',
-            'Contact Us'                => 'welcome/contact'
+            'Contact Us'                => 'welcome/contact',
+            'Cancel'                    => 'welcome/cancel',
+            'Vacancies'                 => 'welcome/vacancies',
+            'Tools'                     => 'welcome/tools'
+
+
         );
     }
 
