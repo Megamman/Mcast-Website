@@ -40,8 +40,13 @@ class Welcome extends MY_Controller {
 
 	public function portofolio(){
 
+		$this->load->model('get_model');
+
+		$data = array(
+			'users' 	=> $this->get_model->get_students()
+		);
 		//this command loads a view from the views folder
-		$this->build('portofolio');
+		$this->build('portofolio', $data);
 	}
 
 	public function resources(){
