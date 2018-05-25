@@ -18,4 +18,11 @@ class Get_Model extends CI_Model{
                         ->where('tbl_login.tbl_roles_id', '3')
                         ->get('tbl_login');
     }
+
+    public function get_news(){
+        return $this->db->select('  news_id,
+                                    news_title,
+                                    news_desc')
+                        ->get('tbl_news');
+    }
 }

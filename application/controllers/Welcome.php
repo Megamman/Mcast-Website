@@ -57,8 +57,14 @@ class Welcome extends MY_Controller {
 
 	public function news(){
 
+		$this->load->model('get_model');
+
+		$data = array(
+			'news' 	=> $this->get_model->get_news()
+		);
+
 		//this command loads a view from the views folder
-		$this->build('news');
+		$this->build('news', $data);
 	}
 
 	public function contact(){
