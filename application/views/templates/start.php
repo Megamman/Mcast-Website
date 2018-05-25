@@ -34,7 +34,7 @@
                             <a class="dropdown-item" href="http://www.mcast.edu.mt/183" target="_blank" > HandBook</a>
                             <a class="dropdown-item" href="http://mcast.edu.mt/searchOurCatalogue" target="_blank" >Library</a>
                             <a class="dropdown-item" href="https://www.schoology.com/" target="_blank" >Schoology</a>
-                            <a class="dropdown-item" href="#">Forms</a>
+                            <a class="dropdown-item" href="<?=site_url('welcome/forms')?>">Forms</a>
                             <a class="dropdown-item" href="#">Timetables</a>
                             <a class="dropdown-item" href="http://attendance.mcast.edu.mt/MyAttendance" target="_blank">Attendance</a>
                             <a class="dropdown-item" href="<?=site_url('welcome/cancel')?>">Cancelled Lectures</a>

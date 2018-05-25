@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">TEXT</h1>
+        <h1 class="display-4">Vacancies</h1>
     </div>
 </div>
 
@@ -18,27 +18,18 @@
 
         </div>
         <div class="spb-column-container col-sm-7">
+            <?php foreach($jobs->result_array() as $job): ?>
             <div class="media pb-5">
             <img class="align-self-start mr-3" src="<?=base_url('images/icon.png')?>" alt="Generic placeholder image">
                 <div class="media-body">
-                    <h5 class="mt-0">My Temp App</h5>
-                    <p>A well established Maltese company is looking for an assistant accountant to work closely with the CFO. This is a full-time, long-term position.</p>
-                    <p>
-                        Desired qualifications:
-                        <ul>
-                            <li>basic understanding of accounting</li>
-                            <li>administrative experience</li>
-                            <li>good command of the Maltese language </li>
-                        </ul>
-                    </p>
-                    <p>
-                        We are looking for a reliable person who wants to build a career in a great company.
-                        Interested candidates are asked to send their CV to Apply@MyTempApp.com as soon as possible.<br><br>
-                        If you are looking for a job (part-time, full-time, summer, or internship), register on www.MyTempApp.com
-                    </p>
+                    <h5 class="mt-0"><?=$job['job_name'];?></h5>
+                    <p><?=$job['job_desc'];?></p>
+                    <p>Till: <?=date('d M Y', $job['job_end']);?></p>
+
                 </div>
             </div>
-
+            <?php endforeach; ?>
+<!--
             <div class="media">
             <img class="align-self-start mr-3" src="<?=base_url('images/icon.png')?>" alt="Generic placeholder image">
             <div class="media-body">
@@ -47,9 +38,10 @@
             <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             </div>
             </div>
-
+-->
 
         </div>
+
 
     </section>
 

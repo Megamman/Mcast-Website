@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 //TO ENTER URL OF WEBSITE
-$config['base_url'] = 'http://localhost/Mcast-Website/';
+$config['base_url'] = 'http://localhost/Mcastwebsite/';
 
 /*
 |--------------------------------------------------------------------------

@@ -75,20 +75,43 @@ class Welcome extends MY_Controller {
 
 	public function cancel(){
 
+		$this->load->model('get_model');
+
+		$data = array(
+			'lecturers' 	=> $this->get_model->get_lecturers()
+		);
+
 		//this command loads a view from the views folder
-		$this->build('cancel');
+		$this->build('cancel', $data);
 	}
 
 	public function vacancies(){
 
+		$this->load->model('get_model');
+
+		$data = array(
+			'jobs' 	=> $this->get_model->get_vacancy()
+		);
+
 		//this command loads a view from the views folder
-		$this->build('vacancies');
+		$this->build('vacancies', $data);
 	}
 
 	public function tools(){
 
 		//this command loads a view from the views folder
 		$this->build('tools');
+	}
+
+	public function forms(){
+
+		$this->load->model('get_model');
+
+		$data = array(
+			'forms' 	=> $this->get_model->get_forms()
+		);
+		//this command loads a view from the views folder
+		$this->build('forms', $data);
 	}
 
 

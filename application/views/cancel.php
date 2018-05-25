@@ -14,52 +14,27 @@
                 </p>
             </div>
         </div>
-        <div class="col-sm-2">
-
-        </div>
-        <div class="spb-column-container col-sm-7">
-
-            <table class="table">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Time</th>
-                  <th scope="col">Class</th>
-                  <th scope="col">Group</th>
-
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Red Caruana</td>
-                  <td>08:00 - 10:00</td>
-                  <td>Resources Room</td>
-                  <td>BA Hons Interactive Media yr2 grp.A</td>
-                </tr>
-                <tr>
-                  <td>Red Caruana</td>
-                  <td>08:00 - 10:00</td>
-                  <td>Resources Room</td>
-                  <td>BA Hons Interactive Media yr2 grp.A</td>
-                </tr>
-                <tr>
-                  <td>Red Caruana</td>
-                  <td>08:00 - 10:00</td>
-                  <td>Resources Room</td>
-                  <td>BA Hons Interactive Media yr2 grp.A</td>
-                </tr>
-                <tr>
-                  <td>Red Caruana</td>
-                  <td>08:00 - 10:00</td>
-                  <td>Resources Room</td>
-                  <td>BA Hons Interactive Media yr2 grp.A</td>
-                </tr>
-              </tbody>
-            </table>
-
-
-        </div>
-
     </section>
+
+    <div class="spb-column-container">
+
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Time</th>
+
+            </tr>
+          </thead>
+          <tbody>
+        <?php foreach($lecturers->result_array() as $lect):?>
+            <tr>
+              <td><?=$lect['user_name'];?> <?=$lect['user_surname'];?></td>
+              <td><?=date('d M Y', $lect['lect_end']);?> </td>
+            </tr>
+        <?php endforeach; ?>
+          </tbody>
+        </table>
+    </div>
 
 </div>

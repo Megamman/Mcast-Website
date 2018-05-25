@@ -25,4 +25,29 @@ class Get_Model extends CI_Model{
                                     news_desc')
                         ->get('tbl_news');
     }
+
+    public function get_lecturers(){
+        return $this->db->select('  tbl_login.id_login,
+                                    tbl_users.user_name,
+                                    tbl_users.user_surname,
+                                    tbl_lects.lect_end')
+                        ->join('tbl_lects',     'tbl_lects.tbl_login_id_login   = tbl_login.id_login', 'left')
+                        ->join('tbl_users',     'tbl_users.tbl_login_id_login   = tbl_login.id_login', 'left')
+                        ->get('tbl_login');
+    }
+
+    public function get_forms(){
+        return $this->db->select('  form_id,
+                                    form_name,
+                                    form_desc')
+                        ->get('tbl_forms');
+    }
+
+    public function get_vacancy(){
+        return $this->db->select('  job_id,
+                                    job_name,
+                                    job_desc,
+                                    job_end')
+                        ->get('tbl_jobs');
+    }
 }

@@ -1,32 +1,25 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">Our Work</h1>
+        <h1 class="display-4">School Forms</h1>
     </div>
 </div>
 
 <div class="container">
 
-    <div class="row">
-
-        <div class="col-sm-3">
-
-        </div>
-        <div class="col-sm-6">
-            <h4 class="text-center">Students | Lecturers | Our Place</h4>
-        </div>
-        <div class="col-sm-3">
-
-        </div>
-    </div>
-
     <div class="row min-padding no-padding">
-<?php foreach($users->result_array() as $user): ?>
+<?php foreach($forms->result_array() as $form):
+    $filename = urlencode($form['form_name']);
+    $files = glob("uploads/forms/{$filename}.*");
+    if (count($files) > 0) $files = $files[0];
+    else $files = "default.png";
+?>
         <div class="col-sm-4 mb-5">
             <div class="card" style="width: 100%;">
-                <img class="card-img-top" src="<?=base_url('images/image.jpg')?>" alt="Card image cap">
+                <img class="card-img-top" src="<?=base_url($files)?>" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title"><?=$user['user_name'];?> <?=$user['user_surname'];?></h5>
-                    <a href="<?=$user['std_link'];?>" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title"><?=$form['form_name'];?></h5>
+                    <p class="card-text"><?=$form['form_desc'];?></p>
+                    <a href="<?=base_url($files)?>" class="btn btn-primary" Download>Download</a>
                 </div>
             </div>
         </div>
